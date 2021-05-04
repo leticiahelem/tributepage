@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background-color: #000;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.imglogo {
+    width: 300px;
+    height: 250px;
+}
+.line{
+    background: linear-gradient(140deg, #dd4646 0%, #e36744 16%, #e98340 33%, #ed9d3b 50%, #f1b634 66%, #f4cf29 98%, #f5e814 100% );
+    height: 4px;
+    width: 100%;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/barry.png);
+    height: 780px;
+    background-position: center;
+    background-size: cover;
+
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.title, .subtitle {
+    display: flex;
+    justify-content: center;
+    font-family: Freckle Face, cursive;
+}
+.title {
+    text-shadow: 3px 3px 3px rgba(255, 255, 0, 0.719);
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: rgb(172, 24, 24);
+}
+.subtitle {
+    color: rgba(255, 255, 0, 0.877);
+    margin-top: 20px;
+    text-shadow: 3px 3px 1px rgb(172, 24, 24);
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.widget{
+    display: flex;
+}
+.widgets_story{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 3000px;
+}
+.story1, .story2, .story3, .story4, .story5, .story6, .story7 {
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img1 {
+    margin-left: 20px;
+    width: 500px;
+    height:350px ;
+    border-radius: 5px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+.text_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Freckle Face, cursive;
+    text-shadow: 1px 1px 2px yellow;
+}
+.text_subtitle{
+    font-family: Shadows Into Light, cursive ;
+    font-size: 20px;
+}
+.story1, .story2, .story3, .story4, .story5, .story6, .story7 {
+    background-color: brown ;
+    width: 1000px;
+    height: 400px;
+    border: 3px dashed rgba(255, 255, 0, 0.877);
+    border-radius: 10px;
+}
+.st1, .st2, .st3, .st4, .st5, .st6, .st7 {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.footertext{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 0, 0.877);
+    margin-top: 20px;
+    text-shadow: 0px 2px 0px rgb(172, 24, 24);
+    font-size: 25px;
+    font-family: Freckle Face, cursive;
+}
+@media (max-width:1024px){
+    .subtitle{
+    margin-left: 20px;
+    }
+    .widgets_story{
+        height: auto;
+    }
+    .story1, .story2, .story3, .story4, .story5, .story6, .story7 {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 800px;
+        margin: 20px;
+    }
+    .img1 {
+        width: 350px;
+        margin-top: 20px;
+    }
+    .subtitle{
+        margin-left: 20px;
+    }
+    .footertext{
+        flex-wrap: wrap;
+    }
+    .story6.sto {
+        height: 900px;
+    }
+    .story7.sto1 {
+        height: 850px;
+    }
+    .banner {
+        display: none;
+    }
+}
